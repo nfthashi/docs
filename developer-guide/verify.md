@@ -40,3 +40,30 @@ Successfully verified contract NativeNFT on Etherscan.
 https://kovan.etherscan.io/address/0x0Ee964Acc426237998e5015C176D06744f64aE59#code
 ```
 
+
+
+## SetBridgeContract
+
+First of all, you have to set the mapping of the domain ID to the contract address for all contracts you deployed. If you want to support 3chains; Rinkeby, Kovan, and Goerli, you have to set the contract address of Kovan and Goerli to the Rinkeby contract and the other two as well.
+
+You can find the domain ID of the chains from [here](informations.md#domain-id)
+
+Go to the etherscan page, Contract => Connect your web3 wallet => Write contract => 7.setBridgeContract
+
+Input the domain ID and the contract address. This case, set Kovan domain ID (2221) and the contract address of Kovan
+
+![](<../.gitbook/assets/Screen Shot 2022-05-27 at 18.56.57.png>)
+
+## xCall
+
+xCall is a function that used to bridge NFTs.\
+You can bridge your NFTs by entering these arguments and sending a transaction.
+
+* from : the address of the owner of an NFT
+* to : the address you want to send to
+* tokenID  the token ID you want to send .
+* sendToDomain : the domain ID of the destination chain.  => [DomainID](informations.md#domain-id)
+
+For example, when sending to Kovan, input like this.
+
+![](<../.gitbook/assets/Screen Shot 2022-05-27 at 19.00.47.png>)
