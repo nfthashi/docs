@@ -2,7 +2,7 @@
 
 Wrap pattern support any NFTs already created When you deposit an NFT to the contract in Chain A, the NFT is minted in Chain B. When you burn the NFT in Chain B, the deposited NFT is returned.
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (1).png>)
 
 1. Select Bridge Pattern
 2. Select Wrap (Original ⇒ Wrapped) or Unwrap(Wrapped ⇒ Original)

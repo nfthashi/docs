@@ -15,6 +15,7 @@
 * [How to use Wrap Pattern Bridge](operation-guide/how-to-use-wrap-pattern-bridge.md)
 * [How to use Native Bridge](operation-guide/how-to-use-native-bridge.md)
 * [How to check NFT bridge status](operation-guide/how-to-check-nft-bridge-status.md)
+* [How to bridge Native NFT](operation-guide/how-to-bridge-native-nft.md)
 
 ## Developer Guide
 
