@@ -18,6 +18,7 @@
 
 ## Developer Guide
 
+* [SDK Guide](developer-guide/sdk-guide.md)
 * [How to deploy your own xNativeNFT](developer-guide/how-to-deploy-your-own-xnativenft.md)
 * [Verify](developer-guide/verify.md)
 * [Informations](developer-guide/informations.md)
