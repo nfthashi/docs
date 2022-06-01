@@ -6,8 +6,6 @@
 $ npm i @nfthashi/contracts
 ```
 
-
-
 #### Usage
 
 Once installed, you can use the contracts in the library by importing them:
@@ -63,7 +61,7 @@ contract MyCollectible is NativeNFT {
 
 
 
-For example, when deploying to rinkeby with token ID 101 \~ 200 set,
+For example, when deploying to rinkeby with token ID 101 \~ 200 set, the arguments would look like this.
 
 ```
 pragma solidity ^0.8.0;
@@ -71,15 +69,15 @@ pragma solidity ^0.8.0;
 import "@nfthashi/contracts/contracts/native/example/NativeNFT";
 
 contract MyCollectible is NativeNFT {
-    constructor(
+    constructor() NativeNFT(
       1111,
-      a,
-      address dummyTransactingAssetId,
-      uint256 startTokenId,
-      uint256 endTokenId,
-      string memory name,
-      string memory symbol,
-      string memory baseTokenURI
+      a0x2307Ed9f152FA9b3DcDfe2385d279D8C2A9DF2b0,
+      0x3FFc03F05D1869f493c7dbf913E636C6280e0ff9,
+      101,
+      200,
+      TEST TOKEN NFT,
+      TEST,
+      www.nfthashi.com/metadata/
   )  {
   }
 }
