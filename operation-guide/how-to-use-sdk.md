@@ -6,6 +6,8 @@
 $ npm i @nfthashi/contracts
 ```
 
+The functions and interfaces of each contract are summarized [here.](../developer-guide/sdk-guide.md)
+
 ### Usage
 
 Once installed, you can use the contracts in the library by importing them:
