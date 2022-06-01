@@ -30,25 +30,24 @@ contract MyCollectible is NativeNFT {
 }
 ```
 
-<details>
-
-<summary>Constructor arguments</summary>
+{% hint style="info" %}
+Constructor arguments
 
 *   selfDomain
 
     The domain ID of the network you deploy
 
-    You can find the ID from [here](../developer-guide/informations.md#domain-id)
+    You can find the ID  [here](../developer-guide/informations.md#domain-id)
 *   connext
 
     The connext handler address of the network you deploy
 
-    You can find the connext addresses from [here](../developer-guide/informations.md#connext-contract-address)
+    You can find the connext addresses  [here](../developer-guide/informations.md#connext-contract-address)
 *   dummyTransactionAssetId
 
     The test ERC20 token address of the network you deploy
 
-    You can find the Test ERC20 address from [here](../developer-guide/informations.md#test-erc20-contract-address)
+    You can find the Test ERC20 address  [here](../developer-guide/informations.md#test-erc20-contract-address)
 *   startTokenId & endTokenId
 
     Enter how many tokens you want to mint in this chain\
@@ -56,12 +55,11 @@ contract MyCollectible is NativeNFT {
 *   name & symbol & baseTokenURI
 
     Enter each as you would when creating an ERC721
-
-</details>
-
+{% endhint %}
 
 
-For example, when deploying to rinkeby with token ID 101 \~ 200 set, the arguments would look like this.
+
+For example, when deploying to rinkeby with token ID 101 \~ 200 sets, the arguments would look like this.
 
 ```
 pragma solidity ^0.8.0;
