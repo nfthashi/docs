@@ -16,6 +16,7 @@
 * [How to use Native Bridge](operation-guide/how-to-use-native-bridge.md)
 * [How to check NFT bridge status](operation-guide/how-to-check-nft-bridge-status.md)
 * [How to bridge Native NFT](operation-guide/how-to-bridge-native-nft.md)
+* [How to use SDK](operation-guide/how-to-use-sdk.md)
 
 ## Developer Guide
 
