@@ -6,8 +6,6 @@
 $ npm i @nfthashi/contracts
 ```
 
-
-
 ### Usage
 
 Once installed, you can use the contracts in the library by importing them:
@@ -32,7 +30,7 @@ contract MyNFT is NFTNativeBridge{
 }
 ```
 
-See documentation for variables required to deploy to other chain
+See documentation for variables required to deploy to other chains
 
 {% hint style="info" %}
 Constructor arguments
@@ -124,12 +122,12 @@ contract MyCollectible is NativeNFT {
       0x3FFc03F05D1869f493c7dbf913E636C6280e0ff9,
       101,
       200,
-      TEST TOKEN NFT,
-      TEST,
-      www.nfthashi.com/metadata/
+      "TEST TOKEN NFT",
+      "TEST",
+      "www.nfthashi.com/metadata/"
   )  {
   }
 }
 ```
 
-_If you're new to smart contract development, head to_ [_Developing Smart Contracts_](https://docs.openzeppelin.com/learn/developing-smart-contracts) _to learn about creating a new project and compiling your contracts. This Openzeppelin Document help your understanding._
+_If you're new to smart contract development, head to_ [_Developing Smart Contracts_](https://docs.openzeppelin.com/learn/developing-smart-contracts) _to learn about creating a new project and compiling your contracts. This Openzeppelin document helps your understanding._
