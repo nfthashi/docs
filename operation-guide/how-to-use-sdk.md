@@ -83,3 +83,4 @@ contract MyCollectible is NativeNFT {
 }
 ```
 
+_If you're new to smart contract development, head to_ [_Developing Smart Contracts_](https://docs.openzeppelin.com/learn/developing-smart-contracts) _to learn about creating a new project and compiling your contracts. This Openzeppelin Document help your understanding._
