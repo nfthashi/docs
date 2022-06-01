@@ -15,7 +15,7 @@ When you deploy to Rinkeby, the arguments would be like these.
 ```
 pragma solidity ^0.8.0;
 
-import "@nfthashi/contracts/contracts/native/NFTNativeBridge.sol";
+import "@nfthashi/contracts/native/NFTNativeBridge.sol";
 
 contract MyNFT is NFTNativeBridge{
     constructor() NFTNativeBridge( .  
@@ -62,7 +62,7 @@ In this contract, you can specify the token ID that can be minted in each chain.
 ```
 pragma solidity ^0.8.0;
 
-import "@nfthashi/contracts/contracts/native/example/NativeNFT";
+import "@nfthashi/contracts/native/example/NativeNFT";
 
 contract MyCollectible is NativeNFT {
     constructor(
@@ -113,7 +113,7 @@ For example, when deploying to rinkeby with token ID 101 \~ 200 sets, the argume
 ```
 pragma solidity ^0.8.0;
 
-import "@nfthashi/contracts/contracts/native/example/NativeNFT";
+import "@nfthashi/contracts/native/example/NativeNFT";
 
 contract MyCollectible is NativeNFT {
     constructor() NativeNFT(
