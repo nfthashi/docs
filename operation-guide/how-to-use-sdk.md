@@ -1,14 +1,65 @@
 # How to use SDK
 
-#### Installation
+### Installation
 
 ```
 $ npm i @nfthashi/contracts
 ```
 
-#### Usage
+
+
+### Usage
 
 Once installed, you can use the contracts in the library by importing them:
+
+When you deploy to Rinkeby, the arguments would be like these.
+
+```
+pragma solidity ^0.8.0;
+
+import "@nfthashi/contracts/contracts/native/NFTNativeBridge.sol";
+
+contract MyNFT is NFTNativeBridge{
+    constructor() NFTNativeBridge( .  
+        1111,                                         /selfDomain ID
+        0x2307Ed9f152FA9b3DcDfe2385d279D8C2A9DF2b0,   /Connext handler address
+        0x3FFc03F05D1869f493c7dbf913E636C6280e0ff9 .  /dummyTransactionAssetId
+    )ERC721(
+        "name",
+        "symbol"
+    ){
+       
+}
+```
+
+See documentation for variables required to deploy to other chain
+
+{% hint style="info" %}
+Constructor arguments
+
+*   selfDomain
+
+    The domain ID of the network you deploy
+
+    You can find the ID  [here](../developer-guide/informations.md#domain-id)
+*   connext
+
+    The connext handler address of the network you deploy
+
+    You can find the connext addresses  [here](../developer-guide/informations.md#connext-contract-address)
+*   dummyTransactionAssetId
+
+    The test ERC20 token address of the network you deploy
+
+    You can find the Test ERC20 address  [here](../developer-guide/informations.md#test-erc20-contract-address)
+{% endhint %}
+
+
+
+### Example
+
+We provide an example NFT contract like this.\
+In this contract, you can specify the token ID that can be minted in each chain.
 
 ```
 pragma solidity ^0.8.0;
