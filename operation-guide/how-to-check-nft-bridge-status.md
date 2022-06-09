@@ -43,5 +43,6 @@ Go to connextscan page and search transferId you got before\
 If everything goes well and the token was transferred, a screeen like this will appear.\
 The transaction hash in the Execute confirms that the token is minted at the bridge destination.
 
-![](<../.gitbook/assets/Screen Shot 2022-06-01 at 20.21.20.png>)
+Immediatery after bridge your NFT, connextscan page will return 404 Error to your browser.
 
+![](<../.gitbook/assets/Screen Shot 2022-06-01 at 20.21.20.png>)

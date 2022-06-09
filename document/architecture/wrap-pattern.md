@@ -8,11 +8,11 @@ Let me describe along with the user flow.
 
 
 
-\###Case of bridge from Chain A to Chain B：Wrap
+#### Case of bridge from Chain A to Chain B：Wrap
 
 ![](<../../.gitbook/assets/Screen Shot 2022-05-25 at 14.44.36.png>)
 
-* Deposit an NFT to xNFT handler contract on Chain A (Origin Chain)
+* Deposit an NFT to NFT Hashi handler contract on Chain A (Origin Chain)
 * The handler contract sends the information of NFT or chains to Chain B using xCall supported by Connext. (more info about xCall ⇒ [xapp-starter](https://github.com/connext/xapp-starter)
 * The Handler Contract of Chain B receives the xCall from Chain A
 * Compute the contract address from the information of these using Create2.

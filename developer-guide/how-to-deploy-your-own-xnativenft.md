@@ -4,13 +4,13 @@
 
 
 
-Deploy native xNFT for Kovan
+Deploy native NFTHashi for Kovan
 
 ```
 yarn workspace contracts hardhat native-deploy --network kovan --self-domain 2221 --connext 0x71a52104739064bc35bED4Fc3ba8D9Fb2a84767f --dummy-transacting-asset-id 0xB5AabB55385bfBe31D627E2A717a7B189ddA4F8F --start-token-id 0 --end-token-id 100
 ```
 
-Deploy native xNFT for Rinkeby
+Deploy native NFTHashi for Rinkeby
 
 ```
 yarn workspace contracts hardhat native-deploy --network rinkeby --self-domain 1111 --connext 0x979588965099F4DEA3CAd850d67ca3356284591e --dummy-transacting-asset-id 0xB7b1d3cC52E658922b2aF00c5729001ceA98142C --start-token-id 100 --end-token-id 200

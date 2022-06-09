@@ -2,7 +2,7 @@
 
 ### Native Support
 
-Native Support Pattern is the bridge function for users trying to create the new NFT project with the cross-chain bridge. We develop a contract that incorporates the cross-chain bridge function to ERC721. You can use A as is or inherit it and create a contract to support a cross-chain NFT bridge.
+Native Pattern is the bridge function for users trying to create the new NFT project with the cross-chain bridge. We develop a contract that incorporates the cross-chain bridge function to ERC721. You can use A as is or inherit it and create a contract to support a cross-chain NFT bridge.
 
 
 
@@ -12,7 +12,7 @@ Some initial setup is required when using the NFTs with the bridge function
 
 *   Deploy
 
-    xNFTNative contract must be deployed to all chains you wand to support
+    NFTHashi Native contract must be deployed to all chains you wand to support
 *   Resister
 
     In order for xNativeNFTs of different chains to recognize them as xNativeNFTs of the same project, the mapping of the chain's domain ID to the contract address must be registered in the xNativeNFT of each chain
