@@ -88,5 +88,5 @@ _If you're new to smart contract development, head to_ [_Developing Smart Contra
 
 ### Deployment
 
-* Token ID should be different in each chain. For example, Rinkeby token ID is 0-999, and Kovan token ID is 1000-1999.
+* Token ID should be different in each chain. For example, Rinkeby token ID is 0-999, and Goerli token ID is 1000-1999.
 * After deploying the contract to each chain, all contract connections should be registered.
