@@ -3,11 +3,8 @@
 ### Get transfer ID
 
 * Copy the transaction hash on the origin chain
-* Use this code in the subQuery of the original chain to get “Transaction ID”
+* Use this code in the sub query of the original chain to get “Transaction ID”
   * subgraph URL
-    *   Kovan
-
-        &#x20;[https://thegraph.com/hosted-service/subgraph/connext/nxtp-amarok-runtime-v0-kovan](https://thegraph.com/hosted-service/subgraph/connext/nxtp-amarok-runtime-v0-kovan)
     *   Rinkeby
 
         &#x20;[https://thegraph.com/hosted-service/subgraph/connext/nxtp-amarok-runtime-v0-rinkeby](https://thegraph.com/hosted-service/subgraph/connext/nxtp-amarok-runtime-v0-rinkeby)
