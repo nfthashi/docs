@@ -1,8 +1,14 @@
-# How to use
+# How to use NFTHashi
 
 
 
 How to use our bridge is a piece of cake!
+
+
+
+Go to the NFTHashi page
+
+[https://www.nfthashi.com/bridge](https://www.nfthashi.com/bridge)
 
 Connect your wallet.
 

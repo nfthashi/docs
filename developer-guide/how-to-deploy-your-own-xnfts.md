@@ -1,12 +1,18 @@
 # How to deploy your own xNFTs
 
+We provide the contract integrated bridge function as SDK for the users who want to create a more advanced NFT utilizing cross-chain. For example, a chain with minted NFTs, a chain with current NFTs, the itinerancy of NFT bridges, and other NFTs whose metadata changes according to these attributes, and so on, will allow for new expressions that have not been possible before!
+
+You can create those NFTs easily by installing SDK and inheriting the contract follow the instructions in the document below.
+
+
+
 ### Installation
 
 ```
 $ npm i @nfthashi/contracts
 ```
 
-The functions and interfaces of each contract are summarized [here.](../developer-guide/sdk-guide.md)
+The functions and interfaces of each contract are summarized [here.](contract-informations.md)
 
 ### Usage
 
@@ -41,17 +47,17 @@ Constructor arguments
 
     The domain ID of the network you deploy
 
-    You can find the ID  [here](../developer-guide/informations.md#domain-id)
+    You can find the ID  [here](informations.md#domain-id)
 *   connext
 
     The connext handler address of the network you deploy
 
-    You can find the connext addresses  [here](../developer-guide/informations.md#connext-contract-address)
+    You can find the connext addresses  [here](informations.md#connext-contract-address)
 *   dummyTransactionAssetId
 
     The test ERC20 token address of the network you deploy
 
-    You can find the Test ERC20 address  [here](../developer-guide/informations.md#test-erc20-contract-address)
+    You can find the Test ERC20 address  [here](informations.md#test-erc20-contract-address)
 {% endhint %}
 
 
@@ -88,17 +94,17 @@ Constructor arguments
 
     The domain ID of the network you deploy
 
-    You can find the ID  [here](../developer-guide/informations.md#domain-id)
+    You can find the ID  [here](informations.md#domain-id)
 *   connext
 
     The connext handler address of the network you deploy
 
-    You can find the connext addresses  [here](../developer-guide/informations.md#connext-contract-address)
+    You can find the connext addresses  [here](informations.md#connext-contract-address)
 *   dummyTransactionAssetId
 
     The test ERC20 token address of the network you deploy
 
-    You can find the Test ERC20 address  [here](../developer-guide/informations.md#test-erc20-contract-address)
+    You can find the Test ERC20 address  [here](informations.md#test-erc20-contract-address)
 *   startTokenId & endTokenId
 
     Enter how many tokens you want to mint in this chain\
