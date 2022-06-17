@@ -23,10 +23,10 @@ When you deploy to Rinkeby, the arguments would be like these.
 ```
 pragma solidity ^0.8.0;
 
-import "@nfthashi/contracts/native/NFTNativeBridge.sol";
+import "@nfthashi/contracts/NativeHashi721.sol";
 
-contract MyNFT is NFTNativeBridge{
-    constructor() NFTNativeBridge( .  
+contract MyNFT is NativeHashi721{
+    constructor() NativeHashi721( .  
         1111,                                         /selfDomain ID
         0x2307Ed9f152FA9b3DcDfe2385d279D8C2A9DF2b0,   /Connext handler address
         0x3FFc03F05D1869f493c7dbf913E636C6280e0ff9 .  /dummyTransactionAssetId
@@ -70,9 +70,9 @@ In this contract, you can specify the token ID that can be minted in each chain.
 ```
 pragma solidity ^0.8.0;
 
-import "@nfthashi/contracts/native/example/NativeNFT";
+import "@nfthashi/contracts/example/NativeHashi721Example";
 
-contract MyCollectible is NativeNFT {
+contract MyCollectible is NativeHashi721Example {
     constructor(
       uint32 selfDomain,
       address connext,
@@ -121,10 +121,10 @@ For example, when deploying to rinkeby with token ID 101 \~ 200 sets, the argume
 ```
 pragma solidity ^0.8.0;
 
-import "@nfthashi/contracts/native/example/NativeNFT";
+import "@nfthashi/contracts/example/NativeHashi721Example";
 
-contract MyCollectible is NativeNFT {
-    constructor() NativeNFT(
+contract MyCollectible is NativeHashi721Example {
+    constructor() NativeHashi721Example(
       1111,
       a0x2307Ed9f152FA9b3DcDfe2385d279D8C2A9DF2b0,
       0x3FFc03F05D1869f493c7dbf913E636C6280e0ff9,
