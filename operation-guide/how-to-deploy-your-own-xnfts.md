@@ -147,64 +147,62 @@ __
 Deploy native NFTHashi for Kovan
 
 ```
-yarn workspace contracts hardhat native-deploy --network kovan --self-domain 2221 --connext 0x71a52104739064bc35bED4Fc3ba8D9Fb2a84767f --dummy-transacting-asset-id 0xB5AabB55385bfBe31D627E2A717a7B189ddA4F8F --start-token-id 0 --end-token-id 100
+yarn workspace @nfthashi/contracts hardhat native-deploy --network kovan --self-domain 2221 --connext 0x3366A61A701FA84A86448225471Ec53c5c4ad49f --dummy-transacting-asset-id 0x3FFc03F05D1869f493c7dbf913E636C6280e0ff9 --start-token-id 1 --end-token-id 10000
 ```
 
 Deploy native NFTHashi for Rinkeby
 
 ```
-yarn workspace contracts hardhat register --network rinkeby --self-contract-address <deployed contract> --opponent-domain 2221 --opponent-contract-address <deployed contract>
+yarn workspace @nfthashi/contracts hardhat native-deploy --network rinkeby --self-domain 1111 --connext 0x2307Ed9f152FA9b3DcDfe2385d279D8C2A9DF2b0 --dummy-transacting-asset-id 0x3FFc03F05D1869f493c7dbf913E636C6280e0ff9 --start-token-id 10001 --end-token-id 2000
+```
+
+Deploy native NFTHashi for Goerli
+
+```
+yarn workspace @nfthashi/contracts hardhat native-deploy --network goerli --self-domain 3331 --connext 0xEC3A723DE47a644b901DC269829bf8718F175EBF --dummy-transacting-asset-id 0x3FFc03F05D1869f493c7dbf913E636C6280e0ff9 --start-token-id 20001 --end-token-id 30000
 ```
 
 ## Register
 
+You should rewrite `self-contract-address` and `opponent-contract-address`
 
-
-Register Rinkeby opponent in Kovan
-
-```
-yarn workspace contracts hardhat register --network kovan --self-contract-address <deployed contract> --opponent-domain 1111 --opponent-contract-address <deployed contract>
-```
-
-Register Kovan opponent in Rinkeby
+Resister Kovan to Rinkeby
 
 ```
-yarn workspace contracts hardhat register --network rinkeby --self-contract-address <deployed contract> --opponent-domain 2221 --opponent-contract-address <deployed contract>
+yarn workspace contracts hardhat register --network kovan --self-contract-address <YOUR_KOVAN_CONTRACT_ADDRESS> --opponent-domain 1111 --opponent-contract-address <YOUR_RINKEBY_CONTRACT_ADDRESS>
+```
+
+Resister Kovan to Goerli
+
+```
+yarn workspace contracts hardhat register --network kovan --self-contract-address <YOUR_KOVAN_CONTRACT_ADDRESS> --opponent-domain 3331 --opponent-contract-address <YOUR_GOERLI_CONTRACT_ADDRESS>
 ```
 
 __
+
+When registering in Rinkeby or Goerli, please also change Self and pponent and enter
 
 ## Mint
 
 Mint NFT in Rinkeby
 
 ```
-yarn workspace contracts hardhat register --network kovan --self-contract-address <deployed contract> --opponent-domain 1111 --opponent-contract-address <deployed contract>
+yarn workspace contracts hardhat native-mint --network rinkeby --self-contract-address <YOUR_RINKEBY_CONTRACT_ADDRESS> --to <YOUR_WALLET_ADDRESS>
 ```
 
 Mint NFT in Kovan
 
 ```
-yarn workspace contracts hardhat native-mint --network kovan --self-contract-address <deployed contract> --to <your address>
+yarn workspace contracts hardhat native-mint --network kovan --self-contract-address <YOUR_KOVAN_CONTRACT_ADDRESS> --to <YOUR_WALLET_ADDRESS>
+```
+
+Mint NFT in Goerli
+
+```
+yarn workspace contracts hardhat native-mint --network goerli --self-contract-address <YOUR_GOERLI_CONTRACT_ADDRESS> --to <YOUR_WALLET_ADDRESS>
 ```
 
 
-
-## Bridge
-
-
-
-From Kovan to Rinkeby
-
-```
-yarn workspace contracts hardhat native-bridge --network kovan --source-contract-address <deployed contract> --from <nft holder address> --to <to address> --token-id <minted token id> --destination-domain 1111
-```
-
-From Rinkeby to Kovan
-
-```
-yarn workspace contracts hardhat native-bridge --network rinkeby --source-contract-address <deployed contract> --from <nft holder address> --to <to address> --token-id <minted token id> --destination-domain 2221
-```
 
 __
 
