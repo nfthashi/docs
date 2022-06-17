@@ -1,15 +1,13 @@
 # Table of contents
 
-* [Welcome to NFT Hashi](README.md)
-  * [Background](welcome-to-nft-hashi/background.md)
-  * [Our Mission](welcome-to-nft-hashi/our-mission.md)
-  * [Why Cross-Chain ?](welcome-to-nft-hashi/why-cross-chain.md)
-  * [Why NFTHashi ?](welcome-to-nft-hashi/why-nfthashi.md)
-
 ## Document
 
+* [What is NFTHashi?](README.md)
+* [Our Mission](document/our-mission.md)
+* [Background](document/background.md)
+* [Why Cross-Chain ?](document/why-cross-chain.md)
+* [Why NFTHashi ?](document/why-nfthashi.md)
 * [Architecture](document/architecture/README.md)
-* [Roadmap](document/roadmap.md)
 * [Relevant Links](document/relevant-links.md)
 
 ## Operation Guide
