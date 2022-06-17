@@ -1,12 +1,13 @@
 # Table of contents
 
 * [Welcome to NFT Hashi](README.md)
+  * [Background](welcome-to-nft-hashi/background.md)
+  * [Our Mission](welcome-to-nft-hashi/our-mission.md)
+  * [Motiovation](welcome-to-nft-hashi/motiovation.md)
 
 ## Document
 
-* [Architecture](document/architecture/README.md)
-  * [Native Pattern](document/architecture/native-pattern.md)
-  * [Wrap Pattern](document/architecture/wrap-pattern.md)
+* [Architecture](document/architecture.md)
 * [Roadmap](document/roadmap.md)
 * [Relevant Links](document/relevant-links.md)
 
@@ -15,11 +16,10 @@
 * [How to use](operation-guide/how-to-use.md)
 * [How to check NFT bridge status](operation-guide/how-to-check-nft-bridge-status.md)
 * [How to bridge Native NFT](operation-guide/how-to-bridge-native-nft.md)
-* [How to use SDK](operation-guide/how-to-use-sdk.md)
+* [How to deploy your own xNFT](operation-guide/how-to-deploy-your-own-xnft.md)
 
 ## Developer Guide
 
 * [SDK Guide](developer-guide/sdk-guide.md)
-* [How to deploy your own xNativeNFT](developer-guide/how-to-deploy-your-own-xnativenft.md)
 * [Verify](developer-guide/verify.md)
 * [Informations](developer-guide/informations.md)

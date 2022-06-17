@@ -1,32 +1,32 @@
 # SDK Guide
 
-### IxNFTNativeBridge
+### INatievHashi721
 
-Required interface of an xNFTNativeBridge compliant contract.
+Required interface of an NativeHashi721 compliant contract.
 
 #### Functions
 
 <details>
 
-<summary>xSend(from, to, tokenId, toDomain)</summary>
+<summary>xSend(from, to, tokenId, sendToDomain)</summary>
 
-`xSend(address from, address to, uint256 tokenId, uint32 toDomain)`
+`xSend(address from, address to, uint256 tokenId, uint32 sendToDomain)`
 
 Send cross-messaging request to Connext \_xCall
 
-Bridge `tokenId`to `toDomain` ’s chain from address `from` to address `to`
+Bridge `tokenId`to sendToDomain ’s chain from address `from` to address `to`
 
 </details>
 
 
 
-### xNFTBridge
+### HashiConnextAdapter
 
 #### Functions
 
 <details>
 
-<summary>constructor (_selfDomain, _connext, _dummyTransactingAssetId )</summary>
+<summary>constructor (_<em>selfDomain,</em> _<em>connext, _transactingAssetId</em>)</summary>
 
 
 
@@ -34,9 +34,9 @@ Bridge `tokenId`to `toDomain` ’s chain from address `from` to address `to`
 
 <details>
 
-<summary>allowList( domainID )</summary>
+<summary>_bridgeContracts( domainID )</summary>
 
-`allowlist (uint32 _allowedDomain) ⇒ address _allowedContract`
+`_bridgeContracts (uint32 _allowedDomain) ⇒ address _allowedContract`
 
 Return the allowed contract address (messageable address)
 
@@ -44,11 +44,11 @@ Return the allowed contract address (messageable address)
 
 <details>
 
-<summary>register(_allowedDomain, _allowedContract);</summary>
+<summary>setBridgeContract(domain, bridgeContract);</summary>
 
-`register(uint32 _allowedDomain, address _allowedContract)`
+`setBridgeContract(uint32 domain, address bridgeContract)`
 
-Resister the `_allowedDomain` to `_allowedContract` mapping
+Resister the `domain` to `bridgeContract` mapping
 
 Requirement : onlyOwner
 
@@ -64,15 +64,15 @@ Requirement : onlyOwner
 
 
 
-### xNFTNativeBridge
+### NativeHashi721
 
 #### Functions
 
 <details>
 
-<summary>xSend(from, to, tokenId, toDomain)</summary>
+<summary>xSend(from, to, tokenId, sendToDomain)</summary>
 
-See IxNFTNativeBridge.xSend
+See INativeHashi721.xSend
 
 </details>
 
