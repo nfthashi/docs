@@ -1,11 +1,12 @@
 # Architecture
 
-We use Connext, and Connext provides trust-minimized cross-chain messaging using optimistic verification provided by Nomad, the most trust-minimized protocol for cross-chain messaging.\
-
+We use Connext, and Connext provides trust-minimized cross-chain messaging using optimistic verification provided by Nomad, the most trust-minimized protocol for cross-chain messaging.
 
 ### Why is trust minimized? <a href="#why-is-trust-minimized" id="why-is-trust-minimized"></a>
 
-Connext provides trust-minimized cross-chain messaging. Connext is built on Nomad - an optimistic communication protocol that requires only 1 good actor in the space to remain secure. This is the most trust minimized solution currently available beyond native bridges (Ethereum-L2s, IBC) that are not available across separate domains.
+Connext provides trust-minimized cross-chain messaging. Connext is built on Nomad - an optimistic communication protocol that requires only 1 good actor in the space to remain secure.&#x20;
+
+This is the most trust minimized solution currently available beyond native bridges (Ethereum-L2s, IBC) that are not available across separate domains.
 
 ### How it works: <a href="#how-it-works" id="how-it-works"></a>
 
@@ -14,11 +15,9 @@ A message is passed by a relayer between 2 chains but, before it becomes valid, 
 For more information, see this article\
 [https://blog.connext.network/optimistic-bridges-fb800dc7b0e0](https://blog.connext.network/optimistic-bridges-fb800dc7b0e0)
 
-
-
 ## Contract Construction
 
-NFTHashis supports any NFTs already created. A simple ERC721 contract is deployed on the bridged chain based on the information of the original NFT existing in Chain A (Origin Chain) and minted to the address that caused the Tx. In case of unwrapping from Chain B to Chain A, a wrapped NFT on Chain B will be burned, and an NFT deposited in contract on Chain A will be transferred to the owner on Chain B on Chain A.
+NFTHashi supports any NFTs already created. A simple ERC721 contract is deployed on the bridged chain based on the information of the original NFT existing in Chain A (Origin Chain) and minted to the address that caused the Tx. In case of unwrapping from Chain B to Chain A, a wrapped NFT on Chain B will be burned, and an NFT deposited in contract on Chain A will be transferred to the owner on Chain B on Chain A.
 
 Let me describe along with the user flow.
 
