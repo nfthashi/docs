@@ -1,4 +1,4 @@
-# How to deploy your own xNFT
+# How to deploy your own xNFTs
 
 ### Installation
 

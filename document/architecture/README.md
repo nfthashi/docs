@@ -1,16 +1,12 @@
 # Architecture
 
-### Main architecture
-
-NFTHahis's main architecture supports any NFTs already created. A simple ERC721 contract is deployed on the bridged chain based on the information of the original NFT existing in Chain A (Origin Chain) and minted to the address that caused the Tx. In case of unwrapping from Chain B to Chain A, a wrapped NFT on Chain B will be burned, and an NFT deposited in contract on Chain A will be transferred to the owner on Chain B on Chain A.
+NFTHashis supports any NFTs already created. A simple ERC721 contract is deployed on the bridged chain based on the information of the original NFT existing in Chain A (Origin Chain) and minted to the address that caused the Tx. In case of unwrapping from Chain B to Chain A, a wrapped NFT on Chain B will be burned, and an NFT deposited in contract on Chain A will be transferred to the owner on Chain B on Chain A.
 
 Let me describe along with the user flow.
 
-
-
 #### Case of bridge from Chain A to Chain B：Wrap
 
-![](<../.gitbook/assets/Screen Shot 2022-05-25 at 14.44.36.png>)
+![](<../../.gitbook/assets/Screen Shot 2022-05-25 at 14.44.36.png>)
 
 * Deposit an NFT to NFT Hashi handler contract on Chain A (Origin Chain)
 * The handler contract sends the information of NFT or chains to Chain B using xCall supported by Connext. (more info about xCall ⇒ [xapp-starter](https://github.com/connext/xapp-starter)
@@ -22,19 +18,19 @@ Let me describe along with the user flow.
 
 #### Case of bridge from Chain B to Chain A: Dewrap
 
-![](<../.gitbook/assets/Screen Shot 2022-05-25 at 14.46.09.png>)
+![](<../../.gitbook/assets/Screen Shot 2022-05-25 at 14.46.09.png>)
 
 * The bridge contract burns the wrapped NFT minted on Chain B
-* Refer the mapping of Chain A address and Chain B address
+* Refer to the mapping of Chain A address and Chain B address
 * Send NFT information to Chain A using xCall
-* The Handler Contract of Chain B receive the xCall from Chain A
+* The Handler Contract of Chain B receives the xCall from Chain A
 * An NFT deposited in contract with Chain A will be transferred to the address of an owner at Chain B
 
 
 
 ### Sub architecture
 
-In case of using our SDK, the architecture is different from main architecture.
+In the case of using our SDK, the architecture is different from the main architecture.
 
 Sub architecture is the bridge function for users trying to create the new NFT project with the cross-chain bridge. We develop a contract that incorporates the cross-chain bridge function to ERC721. You can use A as is or inherit it and create a contract to support a cross-chain NFT bridge.
 
@@ -49,7 +45,7 @@ Some initial setup is required when using the NFTs with the bridge function
     NFTHashi Native contract must be deployed to all chains you wand to support
 *   Resister
 
-    In order for xNativeNFTs of different chains to recognize them as xNativeNFTs of the same project, the mapping of the chain's domain ID to the contract address must be registered in the xNativeNFT of each chain
+    In order for NativeHashi721 of different chains to recognize them as NativeHashi721 of the same project, the mapping of the chain's domain ID to the contract address must be registered in the NativeHashi721 of each chain
 
 Detailed initial setup instructions are provided in the Dev Guide
 
@@ -58,7 +54,7 @@ Detailed initial setup instructions are provided in the Dev Guide
 
 ### Bridge Mechanism
 
-![](<../.gitbook/assets/Screen Shot 2022-05-25 at 14.51.20.png>)
+![](<../../.gitbook/assets/Screen Shot 2022-05-25 at 14.51.20.png>)
 
 * Every time a new chain is supported, you must do this process
 * Call xSend function in \<NativeBridgeContractName>. This is a function to bridge NFT

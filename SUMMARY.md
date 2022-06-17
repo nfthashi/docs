@@ -7,7 +7,7 @@
 
 ## Document
 
-* [Architecture](document/architecture.md)
+* [Architecture](document/architecture/README.md)
 * [Roadmap](document/roadmap.md)
 * [Relevant Links](document/relevant-links.md)
 
@@ -16,7 +16,7 @@
 * [How to use](operation-guide/how-to-use.md)
 * [How to check NFT bridge status](operation-guide/how-to-check-nft-bridge-status.md)
 * [How to bridge Native NFT](operation-guide/how-to-bridge-native-nft.md)
-* [How to deploy your own xNFT](operation-guide/how-to-deploy-your-own-xnft.md)
+* [How to deploy your own xNFTs](operation-guide/how-to-deploy-your-own-xnfts.md)
 
 ## Developer Guide
 
