@@ -14,13 +14,13 @@
 
 ## Operation Guide
 
-* [How to use NFTHashi](operation-guide/how-to-use-nfthashi.md)
+* [How to use NFTHashi](operation-guide/how-to-use.md)
 * [How to check NFT bridge status](operation-guide/how-to-check-nft-bridge-status.md)
 * [How to bridge Native NFT](operation-guide/how-to-bridge-native-nft.md)
 
 ## Developer Guide
 
-* [How to deploy your own xNFTs](developer-guide/how-to-deploy-your-own-xnfts.md)
+* [How to deploy your own xNFTs](operation-guide/how-to-deploy-your-own-xnfts.md)
 * [Verify](developer-guide/verify.md)
-* [Contract Informations](developer-guide/contract-informations.md)
+* [Contract Informations](developer-guide/sdk-guide.md)
 * [Informations](developer-guide/informations.md)
