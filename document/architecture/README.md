@@ -26,7 +26,7 @@ Let me describe along with the user flow.
 ![](<../../.gitbook/assets/Screen Shot 2022-05-25 at 14.44.36.png>)
 
 * Deposit an NFT to NFT Hashi handler contract on Chain A (Origin Chain)
-* The handler contract sends the information of NFT or chains to Chain B using xCall supported by Connext. (more info about xCall ⇒ [xapp-starter](https://github.com/connext/xapp-starter)
+* The handler contract sends the information of NFT or chains to Chain B using xCall supported by Connext. (more info about xCall ⇒ [xapp-starter](https://github.com/connext/xapp-starter))
 * The Handler Contract of Chain B receives the xCall from Chain A
 * Compute the contract address from the information of these using Create2.
 * If the computed address has not been deployed, the wrapped NFT contract is deployed to the computed contract address and minted. After the second time, the NFT is minted from a contract that has already been deployed.
@@ -63,12 +63,12 @@ Some initial setup is required when using the NFTs with the bridge function
 
 *   Deploy
 
-    NFTHashi Native contract must be deployed to all chains you wand to support
-*   Resister
+    NFTHashi Native contract must be deployed to all chains you want to support
+*   Register
 
     In order for NativeHashi721 of different chains to recognize them as NativeHashi721 of the same project, the mapping of the chain's domain ID to the contract address must be registered in the NativeHashi721 of each chain
 
 Detailed initial setup instructions are provided in the Dev Guide
 
 * [Deployment](broken-reference)
-* [Resister](broken-reference)
+* [Register](broken-reference)
