@@ -1,6 +1,6 @@
 # Contract Informations
 
-### INatievHashi721
+### INativeHashi721
 
 Required interface of an NativeHashi721 compliant contract.
 
@@ -12,7 +12,7 @@ Required interface of an NativeHashi721 compliant contract.
 
 `xSend(address from, address to, uint256 tokenId, uint32 sendToDomain)`
 
-Send cross-messaging request to Connext \_xCall
+Send cross-chain messaging request to Connext \_xCall
 
 Bridge `tokenId`to sendToDomain ’s chain from address `from` to address `to`
 
@@ -48,7 +48,7 @@ Return the allowed contract address (messageable address)
 
 `setBridgeContract(uint32 domain, address bridgeContract)`
 
-Resister the `domain` to `bridgeContract` mapping
+Register the `domain` to `bridgeContract` mapping
 
 Requirement : onlyOwner
 
