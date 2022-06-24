@@ -17,3 +17,4 @@
   * [Bridge Native Hashi NFT](developer-guide/how-to-deploy-your-own-cross-chain-nft/bridge-native-hashi-nft.md)
 * [Contract Informations](developer-guide/sdk-guide.md)
 * [Informations](developer-guide/informations.md)
+* [Brand Kit](developer-guide/brand-kit.md)
