@@ -48,7 +48,7 @@ Return the allowed contract address (messageable address)
 
 `setBridgeContract(uint32 domain, address bridgeContract)`
 
-Resister the `domain` to `bridgeContract` mapping
+Register the `domain` to `bridgeContract` mapping
 
 Requirement : onlyOwner
 
