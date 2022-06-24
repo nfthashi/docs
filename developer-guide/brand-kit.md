@@ -2,9 +2,9 @@
 
 ### Logo
 
-![](<../.gitbook/assets/Vertical Red Logo.png>)
+![logo black](../.gitbook/assets/11.png) ![logo white](../.gitbook/assets/10.png)
 
-![](<../.gitbook/assets/Horizontal Red Logo.png>)
+![vertical](<../.gitbook/assets/Vertical Red Logo-min.png>) ![horizontal](<../.gitbook/assets/Horizontal Red Logo-min.png>)
 
 ### Brand-kit
 
