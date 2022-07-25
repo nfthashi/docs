@@ -2,7 +2,7 @@
 
 ### NFTHashi
 
-is a trust-minimized cross-chain NFT bridge powered by Connext & Nomad.
+is a trust-minimized cross-chain NFT protocol powered by Connext & Nomad. You can create and bridge NFTs across any chain!!
 
 ![NFTHashi](<.gitbook/assets/Screen Shot 2022-06-17 at 18.01.58.png>)
 
