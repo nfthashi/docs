@@ -2,7 +2,7 @@
 
 ### NFTHashi
 
-is a trust-minimized cross-chain NFT protocol powered by Connext & Nomad. You can create and bridge NFTs across any chain!!
+is a trust-minimized cross-chain NFT protocol powered by Connext. You can create and bridge NFTs across any chain!!
 
 ![NFTHashi](<.gitbook/assets/Screen Shot 2022-07-25 at 17.49.20.png>)
 
@@ -42,7 +42,8 @@ Cross-chain NFTs can find new use cases in NFTs that did not exist before.
 
 ### Why NFTHashi for Your NFT?
 
-We use Connext, and Connext provides trust-minimized cross-chain messaging using optimistic verification provided by Nomad, the most trust-minimized protocol for cross-chain messaging so you can safely bridge your valuable NFTs!
+\
+We use Connext AMB Bridge \[[https://blog.connext.network/amarok-amb-update-77f142c22db3](https://blog.connext.network/amarok-amb-update-77f142c22db3)] and you can safely bridge your valuable NFTs!
 
 Easily bridge your NFTs with our intuitive portal.
 

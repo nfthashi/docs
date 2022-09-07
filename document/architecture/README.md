@@ -1,12 +1,10 @@
 # Architecture
 
-We use Connext, and Connext provides trust-minimized cross-chain messaging using optimistic verification provided by Nomad, the most trust-minimized protocol for cross-chain messaging.
-
 ### Why is trust minimized? <a href="#why-is-trust-minimized" id="why-is-trust-minimized"></a>
 
-Connext provides trust-minimized cross-chain messaging. Connext is built on Nomad - an optimistic communication protocol that requires only 1 good actor in the space to remain secure.&#x20;
+Connext provides trust-minimized cross-chain messaging. We use AMB Bridge \[[https://blog.connext.network/amarok-amb-update-77f142c22db3](https://blog.connext.network/amarok-amb-update-77f142c22db3)] ,newly announced in August
 
-This is the most trust minimized solution currently available beyond native bridges (Ethereum-L2s, IBC) that are not available across separate domains.
+This is the most trust-minimized solution currently available beyond native bridges (Ethereum-L2s, IBC) that are not available across separate domains.
 
 ### How it works: <a href="#how-it-works" id="how-it-works"></a>
 
