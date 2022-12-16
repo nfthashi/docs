@@ -6,6 +6,8 @@ description: This is about NFTHashi
 
 NFTHashi is a Trust-minimized crosschain NFT bridge built with [Connext](https://www.connext.network).
 
+[https://nfthashi.com/](https://nfthashi.com/)
+
 <figure><img src=".gitbook/assets/Screen Shot 2022-11-21 at 22.02.19.png" alt=""><figcaption><p>NFTHashi</p></figcaption></figure>
 
 ### Motivation
