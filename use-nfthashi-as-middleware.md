@@ -16,7 +16,6 @@ interface IHashi721Bridge {
   function xCall(
     uint32 destination,
     uint256 relayerFee,
-    uint256 slippage,
     address asset,
     address to,
     uint256 tokenId,
@@ -35,9 +34,9 @@ TBD
 
 | Network         | Address                                    | Domain ID  |
 | --------------- | ------------------------------------------ | ---------- |
-| Ethereum Georli | 0x8F5969b8Fa3727392385C5E74CF1AA91a4aC4b40 | 1735353714 |
-| Optimism Georli | 0xb8336251667A3c73faA7e646d3686596069c9D1C | 1735356532 |
-| Polygon Mumbai  | 0xd3F1A0782AFD768f8929343Fb44344A2a49fE343 | 9991       |
+| Ethereum Georli | 0x03eC62c5F5FC375bFB373014C9D4be109Dcc15e8 | 1735353714 |
+| Optimism Georli | 0x368888035172f48896F975C8ef8b640FF1b1dAf8 | 1735356532 |
+| Polygon Mumbai  | 0x0c4005681B59d5B9A42BD60665a936a643294F60 | 9991       |
 
 ### Smart Contract Example
 
@@ -49,7 +48,6 @@ interface IHashi721Bridge {
   function xCall(
     uint32 destination,
     uint256 relayerFee,
-    uint256 slippage,
     address asset,
     address to,
     uint256 tokenId,
@@ -67,14 +65,13 @@ contract SampleXApp {
     function sampleXCall(    
         uint32 destination,         // domain ID from above list
         uint256 relayerFee,         // check Connext document
-        uint256 slippage,           // check Connext document
         address asset,              // NFT contract address
         address to,                 // NFT receiver in destination chain
         uint256 tokenId,            // NFT token ID
-        uint256 isTokenURIIgnored   // if token URI is not required, set true
+        bool isTokenURIIgnored   // if token URI is not required, set true
     ) public {
         // specific logic for your dApp
-        IHashi721Bridge(nftHashiBridgeContract).xCall(destination, relayerFee, slippage, asset, to, tokenId, isTokenURIIgnored);
+        IHashi721Bridge(nftHashiBridgeContract).xCall(destination, relayerFee, asset, to, tokenId, isTokenURIIgnored);
     }
 }
 ```
